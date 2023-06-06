@@ -11,6 +11,6 @@
 
 <script lang="ts">
 export default {
-  name: "NonEmptyPage",
+  name: "SelectPage",
 };
 </script>

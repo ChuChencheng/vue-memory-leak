@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import EmptyPage from "./components/EmptyPage.vue"
-import AnotherEmptyPage from "./components/AnotherEmptyPage.vue"
-import NonEmptyPage from "./components/NonEmptyPage.vue"
+import ManyDivPage from "./components/ManyDivPage.vue"
+import SelectPage from "./components/SelectPage.vue"
 
 import { ref } from 'vue'
  
@@ -9,8 +9,8 @@ const currentTab = ref('EmptyPage')
 
 const tabs = {
   EmptyPage,
-  AnotherEmptyPage,
-  NonEmptyPage,
+  ManyDivPage,
+  SelectPage,
 }
 </script>
 
