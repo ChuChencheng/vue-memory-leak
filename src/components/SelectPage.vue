@@ -5,7 +5,7 @@
       <option value="center">center</option>
       <option value="bottom">bottom</option>
     </select>
-    <div v-for="item in 50000" :key="item">{{item}}</div>
+    <div v-for="item in 5000" :key="item">{{item}}</div>
   </div>
 </template>
 

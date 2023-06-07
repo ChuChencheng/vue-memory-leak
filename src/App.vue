@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import EmptyPage from "./components/EmptyPage.vue"
-import ManyDivPage from "./components/ManyDivPage.vue"
+import DivPage from "./components/DivPage.vue"
 import SelectPage from "./components/SelectPage.vue"
+import TablePage from "./components/TablePage.vue"
 
 import { ref } from 'vue'
 
@@ -12,8 +13,9 @@ const currentTab = ref('EmptyPage')
 
 const tabs: Record<string, Vue.Component> = {
   EmptyPage,
-  ManyDivPage,
+  DivPage,
   SelectPage,
+  TablePage,
 }
 const vueVersion = Vue.version
 </script>
