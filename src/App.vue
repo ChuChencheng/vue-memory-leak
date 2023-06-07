@@ -3,11 +3,11 @@ import EmptyPage from "./components/EmptyPage.vue"
 import ManyDivPage from "./components/ManyDivPage.vue"
 import SelectPage from "./components/SelectPage.vue"
 
-import { ref } from 'vue'
+import { Component, ref } from 'vue'
  
 const currentTab = ref('EmptyPage')
 
-const tabs = {
+const tabs: Record<string, Component> = {
   EmptyPage,
   ManyDivPage,
   SelectPage,
