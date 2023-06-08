@@ -4,20 +4,18 @@ import DivPage from "./components/DivPage.vue"
 import SelectPage from "./components/SelectPage.vue"
 import TablePage from "./components/TablePage.vue"
 
-import { ref } from 'vue'
-
-// The requested module '/node_modules/.vite/deps/vue.js?v=9104ee1b' does not provide an export named 'default'
-import * as Vue from 'vue'
+import { ref, version } from 'vue'
+import type { Component } from 'vue'
  
 const currentTab = ref('EmptyPage')
 
-const tabs: Record<string, Vue.Component> = {
+const tabs: Record<string, Component> = {
   EmptyPage,
   DivPage,
   SelectPage,
   TablePage,
 }
-const vueVersion = Vue.version
+const vueVersion = version
 </script>
 
 <template>
